@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apply</title>
+
+    <link rel='stylesheet' href='apply.css'/>
+
+      <style>
+        input[type='text'],
+        input[type='email'],
+        input[type='password'] {
+          width: 150px;
+          font-family: fantasy;
+          padding: 5px 20px;
+          margin: 8px 0;
+        }
+        body {
+          background-image: url('applyimage.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+      </style>
+  </head>
+<center>
+
+  <body>
+    <header class='speaker-form-header'>
+      <h1>Form Submission</h1>
+      <p><em><strong>Please fill out this form to apply for the giveaway.</strong></em></p>
+    </header>
+
+    <form action='' method='get' >
+      First Name: <input type="text" name="firstname"><br/>
+      Last Name: <input type="text" name="lastname"><br/>
+      Email Address: <input type="email" name="email" ><br/>
+      Yeshiva/ Seminary: <input type="text" name="school" required><br/>
+      Birthday: <input type="date" name="birthday"required ><br/><br/>
+      Gender:<br/>
+      <input type="radio" name="gender" value="Male">Male<br/>
+      <input type="radio" name="gender" value="Female">Female<br/><br/>
+      <strong>Please select which sefer you would like:</strong> <br/>
+      <select name="Seforim">
+        <option value="Mesilas Yesharim" name="Mesilas Yesharim">Mesilas Yesharim</option>
+        <option value="Iggeres Haramban" name="Iggeres Haramban">Iggeres Haramban</option>
+        <option value="Stone Chumash" name="Stone Chumash">Stone Chumash</option>
+      </select> <br/><br/><br/>
+      <label for='abstract'>Please provide a brief explanation why you are qualified to enter this giveaway: </label><br>
+      <textarea id='abstract' name='abstract'></textarea><br/>
+      <input type="submit" value="Apply">
+      <input type="reset">
+    </form>
+
+    <div class="container text-center button">
+        <a href="index.html">
+           <button class="btn btn-outline-secondary btn-lg">Return Home!</button>
+         </a>
+    </div>
+
+  </body>
+</center>
+</html>
